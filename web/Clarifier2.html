@@ -147,10 +147,10 @@
               <div class="card-header pb-0 pt-3 bg-transparent">
 
 
-                <div id="flocculatorparent" style="position: relative; display: inline-block;" >
+                <div id="flocculatorparent" style="position: relative; display: inline-block;">
                   <img class="imgflocculator" src="/clarifierfix2height.png" style="width: 76vw; display: block;">
                   <!-- FAD -->
-                  
+
                   <div class="flocc1 " style="position: absolute; top: 0;">
                     <div class="col-xl-12 mb-xl-0 mb-0 mt-12">
                       <div class="card">
@@ -158,37 +158,25 @@
                           <div class="row">
                             <div class="col-12">
                               <div class="numbers">
-                                <p class="text-sm mb-0 mt-0 text-uppercase font-weight-bold">Flocculator Drain Control [A]
+                                <p class="text-sm mb-0 mt-0 text-uppercase font-weight-bold">Flocculator Drain Control
+                                  [A]
                                 </p>
                                 <table style="width: 100%;text-align: left; font-size: medium;">
                                   <tr>
                                     <td>
                                       Auto Mode:
-                                      <input type="checkbox" class="radio" id="AutoFAD_paralel" onchange="ToggleRadio('A')"> Paralel
-                                      <input type="checkbox" class="radio" id="AutoFAD_sequence" onchange="ToggleRadio('B')"> Sequence
+                                      <input type="checkbox" class="radio" id="AutoFAD_paralel"
+                                        onclick="toggleRadio1('A')"> Paralel
+                                      <input type="checkbox" class="radio" id="AutoFAD_sequence"
+                                        onclick="toggleRadio1('B')"> Sequence
                                     </td>
                                     <td>
                                       Status: (_________)
                                     </td>
                                   </tr>
                                 </table>
-                                <!-- SCRIPT -->
 
-                                <script>
-                                  function ToggleRadio(option) {
-                                      if (option === 'A') {
-                                          document.getElementById("AutoFAD_paralel").checked = true;
-                                          document.getElementById("AutoFAD_sequence").checked = false;
-                                      } else if (option === 'B') {
-                                          document.getElementById("AutoFAD_paralel").checked = false;
-                                          document.getElementById("AutoFAD_sequence").checked = true;
-                                      }
-                                  }
-                                </script>
-
-
-
-                                <table style="width: 100%;text-align: center;" id="FADA" >
+                                <table style="width: 100%;text-align: center;" id="FADA">
                                   <tr>
                                     <td>V1</td>
                                     <td>V2</td>
@@ -202,28 +190,29 @@
                                     <td></td>
                                   </tr>
                                   <tr>
-                                    <td><input id="FADA1" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FADA2" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FADA3" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FADA4" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FADA5" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FADA6" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FADA7" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FADA8" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FADA9" type="number" class="form-control text-center" step="1"></td>
-                                    
+                                    <td><input id="FADA1" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FADA2" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FADA3" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FADA4" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FADA5" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FADA6" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FADA7" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FADA8" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FADA9" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+
                                   </tr>
-                                  
+
                                 </table>
-                                <table style="width: 100%;text-align: left;" id="FADA_intervalandexecute" >
+                                <table style="width: 100%;text-align: left;" id="FADA_intervalandexecute">
                                   <tr>
                                     <div class="col-2 m-2">
                                       <td>Interval:</td>
                                     </div>
-                                    
+
                                     <div class="col-2 m-2">
-                                      <td style="width: 5 vw;"> <input id="INTERVAL_FAD" type="number" class="form-control text-center" step="1"></td>
-                                    </div>                     
+                                      <td style="width: 5 vw;"> <input id="INTERVAL_FAD" type="number"
+                                          class="form-control text-center" step="1" placeholder="menit"></td>
+                                    </div>
 
                                     <td>
                                       <div class="col-2 m-2">
@@ -256,7 +245,7 @@
                                   </tr>
                                 </table>
 
-                                
+
                               </div>
                             </div>
                           </div>
@@ -279,31 +268,18 @@
                                   <tr>
                                     <td>
                                       Auto Mode:
-                                      <input type="checkbox" class="radio" id="AutoFBD_paralel" onchange="ToggleRadio('A')"> Paralel
-                                      <input type="checkbox" class="radio" id="AutoFBD_sequence" onchange="ToggleRadio('B')"> Sequence
+                                      <input type="checkbox" class="radio" id="AutoFBD_paralel"
+                                        onchange="toggleRadio2('A')"> Paralel
+                                      <input type="checkbox" class="radio" id="AutoFBD_sequence"
+                                        onchange="toggleRadio2('B')"> Sequence
                                     </td>
                                     <td>
                                       Status: (_________)
                                     </td>
                                   </tr>
                                 </table>
-                                <!-- SCRIPT -->
 
-                                <script>
-                                  function ToggleRadio(option) {
-                                      if (option === 'A') {
-                                          document.getElementById("AutoFBD_paralel").checked = true;
-                                          document.getElementById("AutoFBD_sequence").checked = false;
-                                      } else if (option === 'B') {
-                                          document.getElementById("AutoFBD_paralel").checked = false;
-                                          document.getElementById("AutoFBD_sequence").checked = true;
-                                      }
-                                  }
-                                </script>
-
-
-
-                                <table style="width: 100%;text-align: center;" id="FBDB" >
+                                <table style="width: 100%;text-align: center;" id="FBDB">
                                   <tr>
                                     <td>V1</td>
                                     <td>V2</td>
@@ -317,28 +293,29 @@
                                     <td></td>
                                   </tr>
                                   <tr>
-                                    <td><input id="FBDB1" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FBDB2" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FBDB3" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FBDB4" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FBDB5" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FBDB6" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FBDB7" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FBDB8" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="FBDB9" type="number" class="form-control text-center" step="1"></td>
-                                    
+                                    <td><input id="FBDB1" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FBDB2" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FBDB3" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FBDB4" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FBDB5" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FBDB6" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FBDB7" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FBDB8" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="FBDB9" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+
                                   </tr>
-                                  
+
                                 </table>
-                                <table style="width: 100%;text-align: left;" id="FBDB_intervalandexecute" >
+                                <table style="width: 100%;text-align: left;" id="FBDB_intervalandexecute">
                                   <tr>
                                     <div class="col-2 m-2">
                                       <td>Interval:</td>
                                     </div>
-                                    
+
                                     <div class="col-2 m-2">
-                                      <td style="width: 5 vw;"> <input id="INTERVAL_FBD" type="number" class="form-control text-center" step="1"></td>
-                                    </div>                     
+                                      <td style="width: 5 vw;"> <input id="INTERVAL_FBD" type="number"
+                                          class="form-control text-center" step="1" placeholder="menit"></td>
+                                    </div>
 
                                     <td>
                                       <div class="col-2 m-2">
@@ -371,7 +348,7 @@
                                   </tr>
                                 </table>
 
-                                
+
                               </div>
                             </div>
                           </div>
@@ -379,7 +356,7 @@
                       </div>
                     </div>
                   </div>
-                  
+
                   <!-- SA -->
                   <div class="flocc3" style="position: absolute; top: 0;">
                     <div class="col-xl-12 mb-xl-0 mb-0 mt-12">
@@ -394,31 +371,18 @@
                                   <tr>
                                     <td>
                                       Auto Mode:
-                                      <input type="checkbox" class="radio" id="AutoSAD_paralel" onchange="ToggleRadio('A')"> Paralel
-                                      <input type="checkbox" class="radio" id="AutoSAD_sequence" onchange="ToggleRadio('B')"> Sequence
+                                      <input type="checkbox" class="radio" id="AutoSAD_paralel"
+                                        onchange="toggleRadio3('A')"> Paralel
+                                      <input type="checkbox" class="radio" id="AutoSAD_sequence"
+                                        onchange="toggleRadio3('B')"> Sequence
                                     </td>
                                     <td>
                                       Status: (_________)
                                     </td>
                                   </tr>
                                 </table>
-                                <!-- SCRIPT -->
 
-                                <script>
-                                  function ToggleRadio(option) {
-                                      if (option === 'A') {
-                                          document.getElementById("AutoSAD_paralel").checked = true;
-                                          document.getElementById("AutoSAD_sequence").checked = false;
-                                      } else if (option === 'B') {
-                                          document.getElementById("AutoSAD_paralel").checked = false;
-                                          document.getElementById("AutoSAD_sequence").checked = true;
-                                      }
-                                  }
-                                </script>
-
-
-
-                                <table style="width: 100%;text-align: center;" id="SADA" >
+                                <table style="width: 100%;text-align: center;" id="SADA">
                                   <tr>
                                     <td>V1</td>
                                     <td>V2</td>
@@ -432,28 +396,29 @@
                                     <td></td>
                                   </tr>
                                   <tr>
-                                    <td><input id="SADA1" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SADA2" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SADA3" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SADA4" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SADA5" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SADA6" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SADA7" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SADA8" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SADA9" type="number" class="form-control text-center" step="1"></td>
-                                    
+                                    <td><input id="SADA1" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SADA2" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SADA3" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SADA4" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SADA5" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SADA6" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SADA7" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SADA8" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SADA9" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+
                                   </tr>
-                                  
+
                                 </table>
-                                <table style="width: 100%;text-align: left;" id="SADA_intervalandexecute" >
+                                <table style="width: 100%;text-align: left;" id="SADA_intervalandexecute">
                                   <tr>
                                     <div class="col-2 m-2">
                                       <td>Interval:</td>
                                     </div>
-                                    
+
                                     <div class="col-2 m-2">
-                                      <td style="width: 5 vw;"> <input id="INTERVAL_SAD" type="number" class="form-control text-center" step="1"></td>
-                                    </div>                     
+                                      <td style="width: 5 vw;"> <input id="INTERVAL_SAD" type="number"
+                                          class="form-control text-center" step="1" placeholder="menit"></td>
+                                    </div>
 
                                     <td>
                                       <div class="col-2 m-2">
@@ -486,7 +451,7 @@
                                   </tr>
                                 </table>
 
-                                
+
                               </div>
                             </div>
                           </div>
@@ -494,7 +459,7 @@
                       </div>
                     </div>
                   </div>
-                  
+
                   <!-- SB -->
                   <div class="flocc4" style="position: absolute; top: 1;">
                     <div class="col-xl-12 mb-xl-0 mb-0 mt-0">
@@ -509,31 +474,18 @@
                                   <tr>
                                     <td>
                                       Auto Mode:
-                                      <input type="checkbox" class="radio" id="AutoSBD_paralel" onchange="ToggleRadio('A')"> Paralel
-                                      <input type="checkbox" class="radio" id="AutoSBD_sequence" onchange="ToggleRadio('B')"> Sequence
+                                      <input type="checkbox" class="radio" id="AutoSBD_paralel"
+                                        onchange="toggleRadio4('A')"> Paralel
+                                      <input type="checkbox" class="radio" id="AutoSBD_sequence"
+                                        onchange="toggleRadio4('B')"> Sequence
                                     </td>
                                     <td>
                                       Status: (_________)
                                     </td>
                                   </tr>
                                 </table>
-                                <!-- SCRIPT -->
 
-                                <script>
-                                  function ToggleRadio(option) {
-                                      if (option === 'A') {
-                                          document.getElementById("AutoSBD_paralel").checked = true;
-                                          document.getElementById("AutoSBD_sequence").checked = false;
-                                      } else if (option === 'B') {
-                                          document.getElementById("AutoSBD_paralel").checked = false;
-                                          document.getElementById("AutoSBD_sequence").checked = true;
-                                      }
-                                  }
-                                </script>
-
-
-
-                                <table style="width: 100%;text-align: center;" id="SBDA" >
+                                <table style="width: 100%;text-align: center;" id="SBDA">
                                   <tr>
                                     <td>V1</td>
                                     <td>V2</td>
@@ -547,28 +499,29 @@
                                     <td></td>
                                   </tr>
                                   <tr>
-                                    <td><input id="SBDA1" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SBDA2" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SBDA3" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SBDA4" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SBDA5" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SBDA6" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SBDA7" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SBDA8" type="number" class="form-control text-center" step="1"></td>
-                                    <td><input id="SBDA9" type="number" class="form-control text-center" step="1"></td>
-                                    
+                                    <td><input id="SBDA1" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SBDA2" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SBDA3" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SBDA4" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SBDA5" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SBDA6" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SBDA7" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SBDA8" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+                                    <td><input id="SBDA9" type="number" class="form-control text-center" step="1" placeholder="detik"></td>
+
                                   </tr>
-                                  
+
                                 </table>
-                                <table style="width: 100%;text-align: left;" id="SBDA_intervalandexecute" >
+                                <table style="width: 100%;text-align: left;" id="SBDA_intervalandexecute">
                                   <tr>
                                     <div class="col-2 m-2">
                                       <td>Interval:</td>
                                     </div>
-                                    
+
                                     <div class="col-2 m-2">
-                                      <td style="width: 5 vw;"> <input id="INTERVAL_SBD" type="number" class="form-control text-center" step="1"></td>
-                                    </div>                     
+                                      <td style="width: 5 vw;"> <input id="INTERVAL_SBD" type="number"
+                                          class="form-control text-center" step="1" placeholder="menit"></td>
+                                    </div>
 
                                     <td>
                                       <div class="col-2 m-2">
@@ -601,7 +554,7 @@
                                   </tr>
                                 </table>
 
-                                
+
                               </div>
                             </div>
                           </div>
@@ -609,7 +562,7 @@
                       </div>
                     </div>
                   </div>
-                  
+
                   <div class="flocc5 " style="position: absolute; top: 1;">
                     <div class="col-xl-12 mb-xl-0 mb-4 mt-7">
                       <div class="card">
@@ -786,18 +739,18 @@
           arr.push(val);
         }
       }
-    }else if(document.getElementById(x).innerText == "GET"){
+    } else if (document.getElementById(x).innerText == "GET") {
 
     }
   }
   function Radio(x) {
     if (document.getElementById("AutoF" + String(x) + "D").checked) {
-      
+
       // alert("Checked");
       document.getElementById("F" + String(x) + "D").removeAttribute('Hidden');
       document.getElementById("F" + String(x) + "DA").setAttribute('Hidden', 'Hidden');
     } else {
-      
+
       // alert("Not Checked");
       document.getElementById("F" + String(x) + "DA").removeAttribute('Hidden');
       document.getElementById("F" + String(x) + "D").setAttribute('Hidden', 'Hidden');
@@ -846,12 +799,12 @@
     var http = new XMLHttpRequest();
     var color = document.getElementById(address).style.background;
     var cmd = "0";
-    if(color == "rgb(255, 0, 0)"){
+    if (color == "rgb(255, 0, 0)") {
       cmd = "1";
-    }else if(color == "rgb(0, 0, 255)"){
+    } else if (color == "rgb(0, 0, 255)") {
       cmd = "0";
     }
-    http.open("GET", "http://192.168.0.101:1880/SendCommand?address=" + String(address)+"&cmd="+cmd, true);
+    http.open("GET", "http://192.168.0.101:1880/SendCommand?address=" + String(address) + "&cmd=" + cmd, true);
     http.send();
     http.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
@@ -889,6 +842,42 @@
     setTimeout(() => {
       start();
     }, 1000);
+  }
+  function toggleRadio1(option) {
+    if (option === 'A') {
+      document.getElementById("AutoFAD_paralel").checked = true;
+      document.getElementById("AutoFAD_sequence").checked = false;
+    } else if (option === 'B') {
+      document.getElementById("AutoFAD_paralel").checked = false;
+      document.getElementById("AutoFAD_sequence").checked = true;
+    }
+  }
+  function toggleRadio2(option) {
+    if (option === 'A') {
+      document.getElementById("AutoFBD_paralel").checked = true;
+      document.getElementById("AutoFBD_sequence").checked = false;
+    } else if (option === 'B') {
+      document.getElementById("AutoFBD_paralel").checked = false;
+      document.getElementById("AutoFBD_sequence").checked = true;
+    }
+  }
+  function toggleRadio3(option) {
+    if (option === 'A') {
+      document.getElementById("AutoSAD_paralel").checked = true;
+      document.getElementById("AutoSAD_sequence").checked = false;
+    } else if (option === 'B') {
+      document.getElementById("AutoSAD_paralel").checked = false;
+      document.getElementById("AutoSAD_sequence").checked = true;
+    }
+  }
+  function toggleRadio4(option) {
+    if (option === 'A') {
+      document.getElementById("AutoSBD_paralel").checked = true;
+      document.getElementById("AutoSBD_sequence").checked = false;
+    } else if (option === 'B') {
+      document.getElementById("AutoSBD_paralel").checked = false;
+      document.getElementById("AutoSBD_sequence").checked = true;
+    }
   }
 
   // start();
